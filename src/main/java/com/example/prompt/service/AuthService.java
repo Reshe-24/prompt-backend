@@ -49,7 +49,7 @@ user.setPasswordHash(passwordEncoder.encode(dto.getPasswordHash()));
 
 // Set role
 if (dto.getRole() == null) {
-    user.setRole(Role.PROMPT_COLLECTOR);
+    user.setRole(Role.TEAM_LEAD);
 } else {
     user.setRole(dto.getRole());
 }
